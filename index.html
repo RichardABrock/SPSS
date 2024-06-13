@@ -149,7 +149,7 @@ Note
 </tr>
 </tbody>
 </table>
-<p>Source: <a href="http://en.wikibooks.org/wiki/Using_SPSS_and_PASW/Understanding_the_Variable_View" class="uri">http://en.wikibooks.org/wiki/Using_SPSS_and_PASW/Understanding_the_Variable_View</a> and <a href="https://libguides.library.kent.edu/SPSS/DefineVariables" class="uri">https://libguides.library.kent.edu/SPSS/DefineVariables</a></p>
+<p><a href="http://en.wikibooks.org/wiki/Using_SPSS_and_PASW/Understanding_the_Variable_View">Source</a> <a href="https://libguides.library.kent.edu/SPSS/DefineVariables">and</a></p>
 <p><u><strong>Entering data</strong></u></p>
 <p>Click on ‘file’, then ‘new’, and then ‘data’ to open a blank data editor.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -159,6 +159,18 @@ Note
 </div>
 <p><strong>Task 1:</strong> Give your variables the following characteristics (in the variable view).</p>
 <table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
 <tbody>
 <tr class="odd">
 <td>
@@ -379,6 +391,11 @@ Scale
 <p>Note: type, width, columns, align can often be left as the default. Also, changing the decimal value will not alter the information you input if you only input whole numbers.</p>
 <p><strong>Task 2:</strong> Try entering the following data into SPSS (in the data view).</p>
 <table class="table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
 <tbody>
 <tr class="odd">
 <td>IDnumber</td>
@@ -446,8 +463,8 @@ Scale
 <p>The data are from the OECD’s 2022 survey - the full data set has been cut down to make things easier. You will find the following variables in the data:</p>
 <table class="table">
 <colgroup>
-<col style="width: 14%">
-<col style="width: 85%">
+<col style="width: 17%">
+<col style="width: 82%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -544,7 +561,62 @@ Q3: What kind of variable is ST253Q0JA?
 <div style="text-align:center">
 <p><img src="images/Descriptive_out.png" width="800" height="533"></p>
 </div>
-<p><strong>Figure 2.3</strong></p>
+<p>Figure 2.3</p>
+<p><strong>Task 2:</strong> More descriptive statistics</p>
+<div class="question">
+<details>
+<summary>
+Q4: What is the mean and standard deviation of the mathematics score?
+</summary>
+<p>Mean = 440.87467 Standard deviation = 101.840726</p>
+</details>
+<details>
+<summary>
+Q5: Which subject has the highest maximum score?
+</summary>
+<p>Mathematics (943.041)</p>
+</details>
+<details>
+<summary>
+Q6: What is the range of the number of digital devices in the home? What is the mean?
+</summary>
+<p>From 1 to 8 - the mean is 6.9855</p>
+</details>
+</div>
+</section>
+<section id="task-3-the-frequencies-option" class="level2">
+<h2 class="anchored" data-anchor-id="task-3-the-frequencies-option"><u><strong>Task 3: The Frequencies option</strong></u></h2>
+<p>Assume we are required to produce other descriptive information such as the number and percentage of teachers who are female, who work part-time and who are satisfied with their jobs. To do this, again select the <u><strong>A</strong></u><strong>nalyze</strong> pull down menu. Choose the <strong>D<u>e</u>scriptive statistics</strong> option, but this time click on <u><strong>F</strong></u><strong>requencies</strong> in the further menu.</p>
+<p>You are again presented with a window showing a list of variables in the <strong>PISA_2022.sav</strong> data file (see figure 2.4). First select the variables you want to look at. Here select GENDER, STATUS and JOBSAT (by clicking on the variable in the list and then clicking the arrow button). SPSS will produce counts and percentages by default for this analysis. If you want to display your frequency data in a chart, you can do this by clicking on the <u><strong>C</strong></u><strong>harts</strong> button and selecting a <u><strong>B</strong></u><strong>ar chart</strong>.</p>
+<div style="text-align:center">
+<p><img src="images/Frequency.png" width="300" height="300"></p>
+</div>
+<p>Figure 2.4</p>
+<p>Click on OK and you will go straight to the output window where your information is generated. You may have some information in this window from the previous task so be aware of this. The new output provides frequency counts of the data for each of the variables you selected and also a series of percentages (see Fig 2.5). Note that for this analysis Percent and Valid Percent are the same as there are no missing data for these variables.</p>
+<pre><code>** Save your output again (overwrite the previous section2.spv as long as your output file includes the data generated for both task 2 and 3).</code></pre>
+<p><strong>Task 3</strong> Frequencies</p>
+<div class="question">
+<details>
+<summary>
+Q7: What percentage of boys and girls are in the survey?
+</summary>
+<p>49.8% Female; 50.2% Male</p>
+</details>
+<details>
+<summary>
+Q8: How many mothers are there in the survey who are electrical engineers?
+</summary>
+<p>125</p>
+</details>
+</div>
+</section>
+<section id="section-3-performing-a-chi-square-test" class="level2">
+<h2 class="anchored" data-anchor-id="section-3-performing-a-chi-square-test">Section 3: Performing a Chi-square test</h2>
+<pre><code>The researcher who collected the data was then interested in whether there were any associations between some of the variables studied in the survey. In particular, the researcher was interested in examining the associations between two of the categorical variables in the questionnaire. In order to do this Chi-square tests were required. 
+
+    The hypothesis that the researcher wanted to test:</code></pre>
+<p>H1: Job satisfaction is associated with gender</p>
+<p>Task 1: Conducting a Chi Square test To carry out a Chi-square analysis click on Descriptive statistics in the Analyze pull down menu. Then select Crosstabs. You will see the variables in the file teachers1.sav listed in the Crosstabs window on the left (See Fig 3.1 and 3.2). Put the dependent variable (DV) into the Row(s): box and the independent variable (IV) into the Column(s): box (remember it is the IV that affects the DV, not the other way round). Once you have selected the two variables, click on the Statistics button (on the side of the window). Fig 3.3 will appear and here select the Chi Square option. Then click on Continue. Click on the Cells button and Fig 3.4 will appear. In the Counts sector click on the Expected selection, the Observed selection should already be selected. This ensures that the expected and the observed frequencies are generated in each cell of the Chi square contingency table. Also in this window, select the Percentages: Column option. Click on Continue then OK to generate your output.</p>
 </section>
 
 </main>
