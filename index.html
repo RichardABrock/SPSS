@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="Index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="fullcontent">
@@ -158,18 +159,6 @@ Note
 </div>
 <p><strong>Task 1:</strong> Give your variables the following characteristics (in the variable view).</p>
 <table class="table">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td>
@@ -390,11 +379,6 @@ Scale
 <p>Note: type, width, columns, align can often be left as the default. Also, changing the decimal value will not alter the information you input if you only input whole numbers.</p>
 <p><strong>Task 2:</strong> Try entering the following data into SPSS (in the data view).</p>
 <table class="table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 12%">
-<col style="width: 12%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td>IDnumber</td>
@@ -457,12 +441,13 @@ Scale
 <p>Finally, locate the Output Window, which is empty at the moment.</p>
 <p>** You may want to save your data file that is generated to <u>in a space you can find (e.g., on your desktop for now)</u> using the filename <strong>section1.sav</strong>**</p>
 <p><u><strong>Section 2: Describing your data</strong></u></p>
-<p>The first aim of this task is to obtain descriptive statistics such as means, standard deviations, frequencies and range of various variables. Download the data file PISA_2022.sav [<a href="https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EXVBVr6lIrdHmn1HPtvmW5MBRt8gy-TNsTfOXn8tNa4reg?e=1bTWvG" class="uri">https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EXVBVr6lIrdHmn1HPtvmW5MBRt8gy-TNsTfOXn8tNa4reg?e=1bTWvG</a>] and open it in SPSS.</p>
+<p>The first aim of this task is to obtain descriptive statistics such as means, standard deviations, frequencies and range of various variables. Download the data file <a href="https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EXVBVr6lIrdHmn1HPtvmW5MBRt8gy-TNsTfOXn8tNa4reg?e=1bTWvG">PISA_2022.sav</a> and open it in SPSS.</p>
+<p><img src="images/Open_file.jpg" width="900" height="420"></p>
 <p>The data are from the OECD’s 2022 survey - the full data set has been cut down to make things easier. You will find the following variables in the data:</p>
 <table class="table">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 82%">
+<col style="width: 14%">
+<col style="width: 85%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -519,51 +504,47 @@ Scale
 </tr>
 </tbody>
 </table>
-<p><strong>Task 1:</strong> Obtain descriptive statistics for the following variables:</p>
-<p>How many students are in the sample?</p>
-<!-- Answer options go here -->
-<div class="radio">
-<p><label> <input type="radio" name="question01" id="opt1" value="560,000" onchange="check_answer()"> 560,000 </label></p>
+<p><strong>Task 1:</strong> Obtain descriptive statistics for the following variables</p>
+<div class="question">
+<details>
+<summary>
+Q1: How many students are there in the data set?
+</summary>
+<p>613,744 students</p>
+</details>
+<details>
+<summary>
+Q2: What kind of variable is ST004D01T?
+</summary>
+<p>Categorical (it is a gender variable)</p>
+</details>
+<details>
+<summary>
+Q3: What kind of variable is ST253Q0JA?
+</summary>
+<p>Ordinal - it is a count of digital devices in the home (the responses are: There are no devices, one, two, three etc)</p>
+</details>
 </div>
-<div class="radio">
-<p><label> <input type="radio" name="question01" id="opt2" value="500,000" onclick="check_answer()"> 500,000 </label></p>
+</section>
+<section id="describing-data" class="level2">
+<h2 class="anchored" data-anchor-id="describing-data">Describing data</h2>
+<p>There are a number of ways of obtaining information describing data using SPSS, in this exercise you will use the Descriptives option in the Analyze  Descriptive statistics menu (see Figure 2.1). The Descriptives option should be used to generate descriptive information about continuous variables using all cases in the data file. The Frequencies option should be used to generate descriptive information about categorical variables using all cases in the data file.</p>
+<p><img src="images/Descriptive.png" width="900" height="420"></p>
+<p>Figure 2.1</p>
+<p><strong>Task 2: The <u>D</u>escriptives option</strong></p>
+<p>Assume we are required to produce descriptive information such as the mean math score by gender for all students in the sample. To do this, first select the <u><strong>A</strong></u><strong>nalyze</strong> pull down menu. Choose the <strong>D<u>e</u>scriptive statistics</strong> option. You are presented with a further menu where you should click on <u><strong>D</strong></u><strong>escriptives</strong>.</p>
+<p>You are then presented with a window showing a list of variables in the <strong>PISA_2022.sav</strong> data file (see figure 2.2). First select the variables you want to look at. Here select both AGE and TENURE (by clicking on the variable in the list and then clicking the arrow button). Now you have to choose what type of statistics you wish to generate. To do this click on the grey <strong>Options</strong> button.</p>
+<p>You can now choose various descriptive statistics which describe the nature of your data. To select an option, click on the word and a cross will appear in its box indicating that it is selected. Select these statistics: <strong>Mean, Standard Deviation, Minimum, Maximum, and Range</strong>. Once these are selected click on the <strong>Continue</strong> button. Then click <strong>OK</strong>.</p>
+<div style="text-align:center">
+<p><img src="images/Descriptive_dialog.png" width="300" height="300"></p>
 </div>
-<div class="radio">
-<p><label> <input type="radio" name="question01" id="opt3" value="570,000" onclick="check_answer()"> 570,000 </label></p>
+<p>Figure 2.2</p>
+<p>You are then presented with the output screen presented in figure 2.3, the Descriptives requested will have been generated in this window. You can look at your output by moving about in the window using the arrow keys on the keyboard or the Page up/ Page down buttons. You can also use the mouse and the “Scroll Bar” on the right hand edge of the output window to move around.</p>
+<p>** You may want to save your output that is generated to <u>in the same space you saved the previous work</u> using the filename <strong>section2.spv,</strong> but do not close this window once you have saved it**</p>
+<div style="text-align:center">
+<p><img src="images/Descriptive_out.png" width="800" height="533"></p>
 </div>
-<!-- Check answer button -->
-<div>
-<button class="btn btn-primary" type="button" onclick="check_answer()" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-Show / Hide result
-</button>
-</div>
-<div id="collapseExample" class="collapse">
-<div id="answerFeedback" class="card card-body">
-<pre><code>The answer selected was ...</code></pre>
-</div>
-</div>
-<!-- Code to update answer feedback -->
-<script type="text/javascript">
-function check_answer()
-{
-    var radioButtons = document.getElementsByName("question01");
-    document.getElementById("answerFeedback").innerHTML = "Try selecting an answer!!";
-    for(var i = 0; i < radioButtons.length; i++)
-    {
-        if(radioButtons[i].checked == true)
-        {
-            var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
-            <!-- feedback for correct / incorrect response -->
-            var feedback = "Not quite. Have another go." 
-            if(radioButtons[i].value == "500,000") {
-              feedback = "Correct!"
-            }
-            document.getElementById("answerFeedback").innerHTML = selectedAnswer + "<br>" + feedback;
-            return true;
-        }
-    }
-}
-</script>
+<p><strong>Figure 2.3</strong></p>
 </section>
 
 </main>
