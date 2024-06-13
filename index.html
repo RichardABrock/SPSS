@@ -73,6 +73,497 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/Data%20view.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+<ol type="1">
+<li>The data view, where we enter our data (similar to an Excel spreadsheet). Each row represents a case (e.g.&nbsp;person, school, organisation).<br>
+</li>
+<li>The variable view, where we label and describe our data. Here, each row represents a variable (e.g.&nbsp;age, gender, educational attainment). The columns provide information about the characteristics of variables. Table 1 explains each of the columns.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>NB: Somewhat confusingly, SPSS sometimes refers to p-value as ‘sig’. What p-value really signifies is the probability that the results have occurred by chance, given the null hypothesis. If the p (probability) is low, then we say the result is significant. In Education and many social sciences, the ‘cut off’ point is often 0.05. And we refer to this cut-off as ‘alpha’.</strong></p>
+</div>
+</div>
+<p><strong>Table 1. Explanation of columns in SPSS variable view</strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 97%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Column title</td>
+<td>What it means</td>
+</tr>
+<tr class="even">
+<td>Name</td>
+<td>This column provides the name of the variable. Older versions of SPSS were limited to 8 character names, which is why you often find rather intriguing names for variables in data sets. New versions of SPSS are not limited to 8 characters, but lengthy descriptions should not be included in the Name. They go in the Label column.</td>
+</tr>
+<tr class="odd">
+<td>Type</td>
+<td>This column indicates the type of variable that is reflected in this particular row. There are 8 options to choose from: Numeric, Comma, Dot, Scientific notation, Date, Dollar, Custom currency, and String. Most variables beginning users will encounter are either Numeric or String variables. Numeric variables are numbers that either represent a value (e.g., 1=Catholic) or are the value of interest (height=73 inches). String numbers are text and can only be treated as such. As a result, very few manipulations can be performed on them in SPSS.</td>
+</tr>
+<tr class="even">
+<td>Width</td>
+<td>The number of digits displayed for numerical values or the length of a string variable.</td>
+</tr>
+<tr class="odd">
+<td>Decimals</td>
+<td>This column allows you to control the number of characters after the decimal place.</td>
+</tr>
+<tr class="even">
+<td>Label</td>
+<td>This column allows you to provide a more extensive description of the variable.</td>
+</tr>
+<tr class="odd">
+<td>Values</td>
+<td>This column allows you to provide a key for what the numbers of a numeric variable may represent (e.g., 1=Catholic, 2=Protestant).</td>
+</tr>
+<tr class="even">
+<td>Missing</td>
+<td>This column allows you to indicate whether there are any missing values in a variable. Values marked as missing are excluded from analyses in SPSS.</td>
+</tr>
+<tr class="odd">
+<td>Columns</td>
+<td>The width of each column in the Data View spreadsheet. Note that this is not the same as the number of digits displayed for each value. This simply refers to the width of the actual column in the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td>Align</td>
+<td>This column indicates the alignment of the variable in the Data View.</td>
+</tr>
+<tr class="odd">
+<td>Measure</td>
+<td>This column indicates the level of measurement of the variable. There are three from which you can choose: Nominal, Ordinal, and Scale.</td>
+</tr>
+<tr class="even">
+<td>Role</td>
+<td>The role that a variable will play in your analyses (i.e., independent variable, dependent variable, both independent and dependent). Some options in SPSS allow you to pre-select variables for particular analyses based on their defined roles. Any variable that meets the role requirements will be available for use in such analyses. It is not recommended that you tamper with this, at least not as novices</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="http://en.wikibooks.org/wiki/Using_SPSS_and_PASW/Understanding_the_Variable_View" class="uri">http://en.wikibooks.org/wiki/Using_SPSS_and_PASW/Understanding_the_Variable_View</a> and <a href="https://libguides.library.kent.edu/SPSS/DefineVariables" class="uri">https://libguides.library.kent.edu/SPSS/DefineVariables</a></p>
+<p><u><strong>Entering data</strong></u></p>
+<p>Click on ‘file’, then ‘new’, and then ‘data’ to open a blank data editor.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p><strong>Task 1:</strong> Give your variables the following characteristics (in the variable view).</p>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>
+<p>
+<strong>Name</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Type</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Width</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Deci-mals</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Label</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Values</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Miss</strong>
+</p>
+<p>
+<strong>-ing</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Columns</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Align</strong>
+</p>
+</td>
+<td>
+<p>
+<strong>Measure</strong>
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+IDnumber
+</p>
+</td>
+<td>
+<p>
+Numeric
+</p>
+</td>
+<td>
+<p>
+8
+</p>
+</td>
+<td>
+<p>
+0
+</p>
+</td>
+<td>
+<p>
+Participant ID
+</p>
+</td>
+<td>
+<p>
+None
+</p>
+</td>
+<td>
+<p>
+None
+</p>
+</td>
+<td>
+<p>
+8
+</p>
+</td>
+<td>
+<p>
+Right
+</p>
+</td>
+<td>
+<p>
+Scale
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<p>
+Gender
+</p>
+</td>
+<td>
+<p>
+Numeric
+</p>
+</td>
+<td>
+<p>
+8
+</p>
+</td>
+<td>
+<p>
+0
+</p>
+</td>
+<td>
+<p>
+Gender of Participant
+</p>
+</td>
+<td>
+<p>
+1 = Male
+</p>
+<p>
+2 = Female
+</p>
+</td>
+<td>
+<p>
+None
+</p>
+</td>
+<td>
+<p>
+8
+</p>
+</td>
+<td>
+<p>
+Right
+</p>
+</td>
+<td>
+<p>
+Nominal
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+IQ
+</p>
+</td>
+<td>
+<p>
+Numeric
+</p>
+</td>
+<td>
+<p>
+8
+</p>
+</td>
+<td>
+<p>
+0
+</p>
+</td>
+<td>
+<p>
+IQ score
+</p>
+</td>
+<td>
+<p>
+None
+</p>
+</td>
+<td>
+<p>
+None
+</p>
+</td>
+<td>
+<p>
+8
+</p>
+</td>
+<td>
+<p>
+Right
+</p>
+</td>
+<td>
+<p>
+Scale
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Note: type, width, columns, align can often be left as the default. Also, changing the decimal value will not alter the information you input if you only input whole numbers.</p>
+<p><strong>Task 2:</strong> Try entering the following data into SPSS (in the data view).</p>
+<table class="table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>IDnumber</td>
+<td>Gender</td>
+<td>IQ</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Male</td>
+<td>105</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Female</td>
+<td>110</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Female</td>
+<td>112</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Female</td>
+<td>102</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Male</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Male</td>
+<td>120</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Female</td>
+<td>98</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Male</td>
+<td>103</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Female</td>
+<td>128</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>Male</td>
+<td>110</td>
+</tr>
+</tbody>
+</table>
+<p>Remember that 1 = Male, 2 = Female for Gender</p>
+<p>Finally, locate the Output Window, which is empty at the moment.</p>
+<p>** You may want to save your data file that is generated to <u>in a space you can find (e.g., on your desktop for now)</u> using the filename <strong>section1.sav</strong>**</p>
+<p><u><strong>Section 2: Describing your data</strong></u></p>
+<p>The first aim of this task is to obtain descriptive statistics such as means, standard deviations, frequencies and range of various variables. Download the data file PISA_2022.sav [<a href="https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EXVBVr6lIrdHmn1HPtvmW5MBRt8gy-TNsTfOXn8tNa4reg?e=1bTWvG" class="uri">https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EXVBVr6lIrdHmn1HPtvmW5MBRt8gy-TNsTfOXn8tNa4reg?e=1bTWvG</a>] and open it in SPSS.</p>
+<p>The data are from the OECD’s 2022 survey - the full data set has been cut down to make things easier. You will find the following variables in the data:</p>
+<table class="table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 82%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Item</td>
+<td>Description</td>
+</tr>
+<tr class="even">
+<td>ST004D01T</td>
+<td>Gender: Male / Female / NA.</td>
+</tr>
+<tr class="odd">
+<td>CNT</td>
+<td>Country</td>
+</tr>
+<tr class="even">
+<td>PV1MATH</td>
+<td>Mathematics test scores (0-1000)</td>
+</tr>
+<tr class="odd">
+<td>PV1READ</td>
+<td>Reading test scores (0-1000)</td>
+</tr>
+<tr class="even">
+<td>PV1SCIE.</td>
+<td>Science test scores (0-1000)</td>
+</tr>
+<tr class="odd">
+<td>HOMEPOS</td>
+<td>A measure of wealth (home possessions) Normalised with a mean of 0,</td>
+</tr>
+<tr class="even">
+<td>ESCS</td>
+<td>A measure of social class Normalised with a mean of 0,</td>
+</tr>
+<tr class="odd">
+<td>OCOD1</td>
+<td>Mother’s occupation</td>
+</tr>
+<tr class="even">
+<td>OCOD2</td>
+<td>Father’s occupation</td>
+</tr>
+<tr class="odd">
+<td>ST253Q01JA</td>
+<td>How many digital devices in your home?</td>
+</tr>
+<tr class="even">
+<td>ST016Q01NA</td>
+<td>How satisfied are you with life (/10)</td>
+</tr>
+<tr class="odd">
+<td>ST253Q01JA</td>
+<td>How many digital devices in your home?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Task 1:</strong> Obtain descriptive statistics for the following variables:</p>
+<p>How many students are in the sample?</p>
+<!-- Answer options go here -->
+<div class="radio">
+<p><label> <input type="radio" name="question01" id="opt1" value="560,000" onchange="check_answer()"> 560,000 </label></p>
+</div>
+<div class="radio">
+<p><label> <input type="radio" name="question01" id="opt2" value="500,000" onclick="check_answer()"> 500,000 </label></p>
+</div>
+<div class="radio">
+<p><label> <input type="radio" name="question01" id="opt3" value="570,000" onclick="check_answer()"> 570,000 </label></p>
+</div>
+<!-- Check answer button -->
+<div>
+<button class="btn btn-primary" type="button" onclick="check_answer()" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+Show / Hide result
+</button>
+</div>
+<div id="collapseExample" class="collapse">
+<div id="answerFeedback" class="card card-body">
+<pre><code>The answer selected was ...</code></pre>
+</div>
+</div>
+<!-- Code to update answer feedback -->
+<script type="text/javascript">
+function check_answer()
+{
+    var radioButtons = document.getElementsByName("question01");
+    document.getElementById("answerFeedback").innerHTML = "Try selecting an answer!!";
+    for(var i = 0; i < radioButtons.length; i++)
+    {
+        if(radioButtons[i].checked == true)
+        {
+            var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
+            <!-- feedback for correct / incorrect response -->
+            var feedback = "Not quite. Have another go." 
+            if(radioButtons[i].value == "500,000") {
+              feedback = "Correct!"
+            }
+            document.getElementById("answerFeedback").innerHTML = selectedAnswer + "<br>" + feedback;
+            return true;
+        }
+    }
+}
+</script>
 </section>
 
 </main>
