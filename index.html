@@ -510,9 +510,15 @@ Scale
 <td>PA185Q08JA</td>
 <td>Agree/disagree: At home, we discuss the books we are reading</td>
 </tr>
+<tr class="even">
+<td>life_sat</td>
+<td>Satisfied / Not-satisfied</td>
+</tr>
 </tbody>
 </table>
-<p><strong>Task 1:</strong> Obtain descriptive statistics for the following variables</p>
+</section>
+<section id="task-1-obtain-descriptive-statistics-for-the-following-variables" class="level2">
+<h2 class="anchored" data-anchor-id="task-1-obtain-descriptive-statistics-for-the-following-variables"><strong>Task 1:</strong> Obtain descriptive statistics for the following variables</h2>
 <div class="question">
 <details>
 <summary>
@@ -539,7 +545,9 @@ Q3: What kind of variable is ST253Q0JA?
 <p>There are a number of ways of obtaining information describing data using SPSS, in this exercise you will use the Descriptives option in the Analyze  Descriptive statistics menu (see Figure 2.1). The Descriptives option should be used to generate descriptive information about continuous variables using all cases in the data file. The Frequencies option should be used to generate descriptive information about categorical variables using all cases in the data file.</p>
 <p><img src="images/Descriptive.png" width="900" height="420"></p>
 <p>Figure 2.1</p>
-<p><strong>Task 2: The <u>D</u>escriptives option</strong></p>
+</section>
+<section id="task-2-the-descriptives-option" class="level2">
+<h2 class="anchored" data-anchor-id="task-2-the-descriptives-option"><strong>Task 2: The <u>D</u>escriptives option</strong></h2>
 <p>Assume we are required to produce descriptive information such as the mean math score by gender for all students in the sample. To do this, first select the <u><strong>A</strong></u><strong>nalyze</strong> pull down menu. Choose the <strong>D<u>e</u>scriptive statistics</strong> option. You are presented with a further menu where you should click on <u><strong>D</strong></u><strong>escriptives</strong>.</p>
 <p>You are then presented with a window showing a list of variables in the <strong>PISA_2022.sav</strong> data file (see figure 2.2). First select the variables you want to look at. Here select both AGE and TENURE (by clicking on the variable in the list and then clicking the arrow button). Now you have to choose what type of statistics you wish to generate. To do this click on the grey <strong>Options</strong> button.</p>
 <p>You can now choose various descriptive statistics which describe the nature of your data. To select an option, click on the word and a cross will appear in its box indicating that it is selected. Select these statistics: <strong>Mean, Standard Deviation, Minimum, Maximum, and Range</strong>. Once these are selected click on the <strong>Continue</strong> button. Then click <strong>OK</strong>.</p>
@@ -576,7 +584,7 @@ Q6: What is the range of the number of digital devices in the home? What is the 
 </div>
 </section>
 <section id="task-3-the-frequencies-option" class="level2">
-<h2 class="anchored" data-anchor-id="task-3-the-frequencies-option"><u><strong>Task 3: The Frequencies option</strong></u></h2>
+<h2 class="anchored" data-anchor-id="task-3-the-frequencies-option"><strong>Task 3: The Frequencies option</strong></h2>
 <p>Assume we are required to produce other descriptive information such as the number and percentage of teachers who are female, who work part-time and who are satisfied with their jobs. To do this, again select the <u><strong>A</strong></u><strong>nalyze</strong> pull down menu. Choose the <strong>D<u>e</u>scriptive statistics</strong> option, but this time click on <u><strong>F</strong></u><strong>requencies</strong> in the further menu.</p>
 <p>You are again presented with a window showing a list of variables in the <strong>PISA_2022.sav</strong> data file (see figure 2.4). First select the variables you want to look at. Here select GENDER, STATUS and JOBSAT (by clicking on the variable in the list and then clicking the arrow button). SPSS will produce counts and percentages by default for this analysis. If you want to display your frequency data in a chart, you can do this by clicking on the <u><strong>C</strong></u><strong>harts</strong> button and selecting a <u><strong>B</strong></u><strong>ar chart</strong>.</p>
 <div style="text-align:center">
@@ -602,25 +610,52 @@ Q8: How many mothers are there in the survey who are electrical engineers?
 </div>
 </section>
 <section id="section-3-performing-a-chi-square-test" class="level2">
-<h2 class="anchored" data-anchor-id="section-3-performing-a-chi-square-test">Section 3: Performing a Chi-square test</h2>
-<pre><code>The researcher who collected the data was then interested in whether there were any associations between some of the variables studied in the survey. In particular, the researcher was interested in examining the associations between two of the categorical variables in the questionnaire. In order to do this Chi-square tests were required. 
-
-    The hypothesis that the researcher wanted to test:</code></pre>
-<p>H1: Job satisfaction is associated with gender</p>
+<h2 class="anchored" data-anchor-id="section-3-performing-a-chi-square-test">** Section 3: Performing a Chi-square test **</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The researcher who collected the data was then interested in whether there were any associations between some of the variables studied in the survey. In particular, the researcher was interested in examining the associations between two of the categorical variables in the questionnaire. In order to do this Chi-square tests were required.</p>
+<pre><code>The hypothesis that the researcher wanted to test:</code></pre>
+<p>H1: The number of boys and girls who are satisfied with life is the same</p>
+</div>
+</div>
 <p>Task 1: Conducting a Chi Square test To carry out a Chi-square analysis click on Descriptive statistics in the Analyze pull down menu. Then select Crosstabs. You will see the variables in the file teachers1.sav listed in the Crosstabs window on the left (See Fig 3.1 and 3.2). Put the dependent variable (DV) into the Row(s): box and the independent variable (IV) into the Column(s): box (remember it is the IV that affects the DV, not the other way round). Once you have selected the two variables, click on the Statistics button (on the side of the window). Fig 3.3 will appear and here select the Chi Square option. Then click on Continue. Click on the Cells button and Fig 3.4 will appear. In the Counts sector click on the Expected selection, the Observed selection should already be selected. This ensures that the expected and the observed frequencies are generated in each cell of the Chi square contingency table. Also in this window, select the Percentages: Column option. Click on Continue then OK to generate your output.</p>
-<div style="text-align:left">
-<p><img src="images/Fig3_1.png" width="300" height="300"></p>
+<p float="centre">
+</p><p><img src="images/Fig3_1.png" width="300" height="300"> <img src="images/Fig3_2.png" width="300" height="300"></p>
+<p></p>
+<p float="centre">
+</p><p><img src="images/Fig3_3.png" width="300" height="300"> <img src="images/Fig3_4.png" width="300" height="300"></p>
+<p></p>
+<p>** Q1) Describing what you have found - Use the data in your output window to complete the statement below:</p>
+<p>___________ percent of boys who were satisfied with their life and _________ percent were dissatisfied.<br>
+____________ percent of girls who were satisfied with their life and _____________ percent were dissatisfied. Compared to boys, girls were more likely to be satisfied/dissatisfied (delete as appropriate) with their lives.<br>
+This association was/was not (delete as appropriate) statistically significant (p&lt;0.05/p&gt;0.05) (delete as appropriate).</p>
+<p>Q2) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
+<p>Q3) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
+<p>𝝌2 (______) = __________ , ___________</p>
+<p>** Save your output as section3.spv.</p>
+<details>
+<summary>
+<p>** Q1) Describing what you have found - Use the data in your output window to complete the statement below:</p>
+<p><u><strong>78.3</strong></u> percent of boys who were satisfied with their life and <u><strong>21.7</strong></u> percent were dissatisfied.<br>
+<u><strong>46.3</strong></u> percent of girls who were satisfied with their life and <u><strong>60.1</strong></u> percent were dissatisfied. Compared to boys, girls were more likely to be <u><strong>dissatisfied</strong></u> with their lives.<br>
+<u><strong>This association was statistically significant (p&lt;0.05).</strong></u></p>
+<p>Q2) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
+<p>Boys and girls report the same level of life satisfaction</p>
+<p>Q3) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
+<p>𝝌2 (<u><strong>1</strong></u>) = <u><strong>7803.811</strong></u> , <u><strong>p &lt;0.01</strong></u></p>
+<div style="text-align:center">
+<p><img src="images/chi_out.png" width="300" height="300"></p>
 </div>
-<div style="text-align:right">
-<p><img src="images/Fig3_2.png" width="300" height="300"></p>
-</div>
-<div style="text-align:left">
-<p><img src="images/Fig3_3.png" width="300" height="300"></p>
-</div>
-<div style="text-align:right">
-<p><img src="images/Fig3_4.png" width="300" height="300"></p>
-</div>
-</section>
+</summary>
+</details></section>
 
 </main>
 <!-- /main column -->
