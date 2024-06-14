@@ -637,7 +637,6 @@ Q8: How many mothers are there in the survey who are electrical engineers?
 <p>The researcher who collected the data was then interested in whether there were any associations between some of the variables studied in the survey. In particular, the researcher was interested in examining the associations between two of the categorical variables in the questionnaire. In order to do this Chi-square tests were required.</p>
 <p>The hypothesis that the researcher wanted to test:</p>
 <p>H1: The number of boys and girls who are satisfied with life is the same</p>
-<p>::: question</p>
 <p><strong><em>Task 4: Conducting a Chi Square test</em></strong></p>
 <p>To carry out a Chi-square analysis click on Descriptive statistics in the Analyze pull down menu. Then select Crosstabs. You will see the variables in the file teachers1.sav listed in the Crosstabs window on the left (See Fig 3.1 and 3.2). Put the dependent variable (DV) into the Row(s): box and the independent variable (IV) into the Column(s): box (remember it is the IV that affects the DV, not the other way round). Once you have selected the two variables, click on the Statistics button (on the side of the window). Fig 3.3 will appear and here select the Chi Square option. Then click on Continue. Click on the Cells button and Fig 3.4 will appear. In the Counts sector click on the Expected selection, the Observed selection should already be selected. This ensures that the expected and the observed frequencies are generated in each cell of the Chi square contingency table. Also in this window, select the Percentages: Column option. Click on Continue then OK to generate your output.</p>
 <p float="centre">
@@ -646,16 +645,18 @@ Q8: How many mothers are there in the survey who are electrical engineers?
 <p float="centre">
 </p><p><img src="images/Fig3_3.png" width="300" height="300"> <img src="images/Fig3_4.png" width="300" height="300"></p>
 <p></p>
-<p>** Q9) Describing what you have found - Use the data in your output window to complete the statement below:</p>
+<p>::: question Q9) Describing what you have found - Use the data in your output window to complete the statement below:</p>
 <p>___________ percent of boys who were satisfied with their life and _________ percent were dissatisfied.<br>
 ____________ percent of girls who were satisfied with their life and _____________ percent were dissatisfied. Compared to boys, girls were more likely to be satisfied/dissatisfied (delete as appropriate) with their lives.<br>
 This association was/was not (delete as appropriate) statistically significant (p&lt;0.05/p&gt;0.05) (delete as appropriate).</p>
 <p>Q10) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
 <p>Q11) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
 <p>𝝌2 (______) = __________ , ___________</p>
-<p>** Save your output as section3.spv.</p>
+Save your output as section3.spv.
+<details>
 <summary>
-<p>** Q9) Describing what you have found - Use the data in your output window to complete the statement below:</p>
+Answer
+</summary>
 <details style="background-color: #c5fce9;">
 <p><u><strong>78.3</strong></u> percent of boys who were satisfied with their life and <u><strong>21.7</strong></u> percent were dissatisfied.<br>
 <u><strong>46.3</strong></u> percent of girls who were satisfied with their life and <u><strong>60.1</strong></u> percent were dissatisfied. Compared to boys, girls were more likely to be <u><strong>dissatisfied</strong></u> with their lives.<br>
@@ -667,9 +668,9 @@ This association was/was not (delete as appropriate) statistically significant (
 <div style="text-align:center">
 <p><img src="images/chi_out.png" width="300" height="300"></p>
 </div>
-</details></summary>
+</details>
 <p>:::</p>
-</section>
+</details></section>
 <section id="section-4-performing-a-t-test" class="level2">
 <h2 class="anchored" data-anchor-id="section-4-performing-a-t-test">Section 4: Performing a T-test</h2>
 <p>Paired and independent samples t-tests</p>
@@ -685,10 +686,10 @@ This association was/was not (delete as appropriate) statistically significant (
 <p>Procedure</p>
 <p>Choose the Compare Means &amp; Proportions option in the Analyze pull down menu. Then select the appropriate type of t-test (Paired-Samples T Test). You will be presented with a window (See fig 4.1).</p>
 <div style="text-align:center">
-<p><img src="images/paired_t.png" width="300" height="300"></p>
+<p><img src="images/Paired_t.png" width="300" height="300"></p>
 </div>
 <div style="text-align:center">
-<p><img src="images/paired_t_dialog.png" width="300" height="300"></p>
+<p><img src="images/Paired_t_dialog.png" width="300" height="300"></p>
 </div>
 <p>Figure 4.1</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -705,31 +706,35 @@ Note
 </div>
 </div>
 <p><strong>Task 4:</strong> Paired t-test</p>
-<p>::: question</p>
+<div class="question">
 <details>
 <summary>
-<p>Q12: Is there a difference in wellbeing between pre and post test?</p>
+Q12: Is there a difference in wellbeing between pre and post test?
+</summary>
 <p>Yes, the mean of the pre-test is 7.0549 and the post test 7.7134</p>
-</summary></details>
+</details>
 <details>
 <summary>
-<p>Q13 Is this difference statistically significant? What is the p-value?</p>
+Q13 Is this difference statistically significant? What is the p-value?
+</summary>
 <p>The p-value is &lt;0.01</p>
 <div style="text-align:center">
 <p><img src="images/Paired_t_out.png" width="300" height="300"></p>
 </div>
-</summary></details>
+</details>
 <details>
 <summary>
-<p>Q14 (Advanced) What is the Null Hypothesis for this test?</p>
+Q14 (Advanced) What is the Null Hypothesis for this test?
+</summary>
 <p>That the means of the pre- and post-test groups are equal</p>
-</summary></details>
+</details>
 <details>
 <summary>
-<p>Q15 (Advanced) Can the Null Hypothesis be rejected? Fill in: t ( df ) = t (the test statistic) , p-value</p>
+Q15 (Advanced) Can the Null Hypothesis be rejected? Fill in: t ( df ) = t (the test statistic) , p-value
+</summary>
 <p>Yes the p-value is &lt;0.01 so the null hypothesis can be rejected. Fill in: t(327) = -7.973, &lt;0.01</p>
-</summary></details>
-<p>:::</p>
+</details>
+</div>
 <p><strong>Task 2: Independent-samples t-test</strong></p>
 <p>We are now going to test whether there is a difference in stress levels between males and females at time 1 (an independent t-test) and then at time 2. To run the t-test, first select the Compare Means &amp; Proportions option in the Analyze pull down menu. Then select the relevant t-test. Once the Independent-samples t-test window is presented, select the dependent variables (into the Test Variable(s): box). Then select the variable that defines the different groups we wish to compare (GENDER) into the Grouping Variable: box. You then have to tell SPSS what groups within the grouping variable you wish to compare. Here, in GENDER, there are only two different groups (male and female). As such, click on the Define Groups button and enter 1 (male) in the Group 1: box and 2 (female) in the Group 2 (if not automatically entered): box.</p>
 <div style="text-align:center">
