@@ -638,7 +638,7 @@ Q8: How many mothers are there in the survey who are electrical engineers?
 <p>The hypothesis that the researcher wanted to test:</p>
 <p>H1: The number of boys and girls who are satisfied with life is the same</p>
 <p>::: question</p>
-<p><strong><em>Task 4: Conducting a Chi Square test </em></strong></p>
+<p><strong><em>Task 4: Conducting a Chi Square test</em></strong></p>
 <p>To carry out a Chi-square analysis click on Descriptive statistics in the Analyze pull down menu. Then select Crosstabs. You will see the variables in the file teachers1.sav listed in the Crosstabs window on the left (See Fig 3.1 and 3.2). Put the dependent variable (DV) into the Row(s): box and the independent variable (IV) into the Column(s): box (remember it is the IV that affects the DV, not the other way round). Once you have selected the two variables, click on the Statistics button (on the side of the window). Fig 3.3 will appear and here select the Chi Square option. Then click on Continue. Click on the Cells button and Fig 3.4 will appear. In the Counts sector click on the Expected selection, the Observed selection should already be selected. This ensures that the expected and the observed frequencies are generated in each cell of the Chi square contingency table. Also in this window, select the Percentages: Column option. Click on Continue then OK to generate your output.</p>
 <p float="centre">
 </p><p><img src="images/Fig3_1.png" width="300" height="300"> <img src="images/Fig3_2.png" width="300" height="300"></p>
@@ -646,23 +646,23 @@ Q8: How many mothers are there in the survey who are electrical engineers?
 <p float="centre">
 </p><p><img src="images/Fig3_3.png" width="300" height="300"> <img src="images/Fig3_4.png" width="300" height="300"></p>
 <p></p>
-<p>** Q1) Describing what you have found - Use the data in your output window to complete the statement below:</p>
+<p>** Q9) Describing what you have found - Use the data in your output window to complete the statement below:</p>
 <p>___________ percent of boys who were satisfied with their life and _________ percent were dissatisfied.<br>
 ____________ percent of girls who were satisfied with their life and _____________ percent were dissatisfied. Compared to boys, girls were more likely to be satisfied/dissatisfied (delete as appropriate) with their lives.<br>
 This association was/was not (delete as appropriate) statistically significant (p&lt;0.05/p&gt;0.05) (delete as appropriate).</p>
-<p>Q2) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
-<p>Q3) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
+<p>Q10) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
+<p>Q11) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
 <p>𝝌2 (______) = __________ , ___________</p>
 <p>** Save your output as section3.spv.</p>
 <summary>
-<p>** Q1) Describing what you have found - Use the data in your output window to complete the statement below:</p>
+<p>** Q9) Describing what you have found - Use the data in your output window to complete the statement below:</p>
 <details style="background-color: #c5fce9;">
 <p><u><strong>78.3</strong></u> percent of boys who were satisfied with their life and <u><strong>21.7</strong></u> percent were dissatisfied.<br>
 <u><strong>46.3</strong></u> percent of girls who were satisfied with their life and <u><strong>60.1</strong></u> percent were dissatisfied. Compared to boys, girls were more likely to be <u><strong>dissatisfied</strong></u> with their lives.<br>
 <u><strong>This association was statistically significant (p&lt;0.05).</strong></u></p>
-<p>Q2) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
+<p>Q10) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
 <p>Boys and girls report the same level of life satisfaction</p>
-<p>Q3) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
+<p>Q11) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
 <p>𝝌2 (<u><strong>1</strong></u>) = <u><strong>7803.811</strong></u> , <u><strong>p &lt;0.01</strong></u></p>
 <div style="text-align:center">
 <p><img src="images/chi_out.png" width="300" height="300"></p>
@@ -675,18 +675,66 @@ This association was/was not (delete as appropriate) statistically significant (
 <p>Paired and independent samples t-tests</p>
 <p>Introduction</p>
 <p>There are two types of t-test that look at the difference between 2 groups or conditions. These are Paired t-tests (within/related subjects) and Independent samples t-test (between/unrelated subjects). We are going to look at both types using the stress.sav data file. Using this data file we can perform both types of t-test.</p>
-<p>You will find four different variables in the Stress.sav data file. These are SNO, GENDER, STRESS1, STRESS2. These data involve a study where students at a school were measured for stress (using a questionnaire). Shortly after the first measurement, the school introduces a range of measures to try to help student stress levels (e.g.&nbsp;providing counsellors, extra tuition etc.). The students’ stress levels are then measured three months after the start of the intervention to see whether it had an impact. The format of the data is :</p>
-<p>SNO Student Number GENDER The Gender of the student<br>
-1 = Male; 2 = Female STRESS1 The level of stress measured at time 1 (before intervention) 5-point scale: 1 = very low stress; 5 = very high stress STRESS2 The level of stress measured at time 2 (three months after school intervention) 5-point scale: 1 = very low stress; 5 = very high stress</p>
+<p>You will find five different variables in the <a href="https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EV-KLofbfUdArAN3UAjD45kBkggmU0gGzC8Fjog0JUMKyg?e=3yOZYS">Wellbeing.sav</a> data file. The data comes from a study into the wellbeing of university students in Colombia which measured their life satisfaction with a survey before and after a course on wellbeing. The data also include a group of control students who didn’t take the course.</p>
+<p>The variables in the data set are:</p>
+<p>ID - A participant unique identifier Gender -The Gender of the student (1 = Male / 2 = Female) Group - Whether the student was in the control or condition group (Intervention/ Control) Life_sat_pre - Respondents reports of their life satisfatcion (/10) before the intervnetion Life_sat_post - Respondents reports of their life satisfatcion (/10) after the intervnetion</p>
 </section>
 <section id="task-4-paired-t-test" class="level2">
 <h2 class="anchored" data-anchor-id="task-4-paired-t-test"><strong>Task 4: Paired t-test</strong></h2>
 <p>Here we are going to test whether or not there is a statistically significant difference between the overall stress levels at time one and time two.</p>
 <p>Procedure</p>
 <p>Choose the Compare Means &amp; Proportions option in the Analyze pull down menu. Then select the appropriate type of t-test (Paired-Samples T Test). You will be presented with a window (See fig 4.1).</p>
+<div style="text-align:center">
+<p><img src="images/paired_t.png" width="300" height="300"></p>
+</div>
+<div style="text-align:center">
+<p><img src="images/paired_t_dialog.png" width="300" height="300"></p>
+</div>
 <p>Figure 4.1</p>
-<pre><code>  Click on the two repeated measures variables (a repeated measures variable is one measured more than once, i.e. it is repeated) and transfer them into the Paired Variables: box. Then simply click on OK. There you have it. Your t-test will appear in the output window.</code></pre>
-<p>Questions for task 1: Q1) Is there a difference in stress levels between time one and time two?</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Click on the two repeated measures variables (a repeated measures variable is one measured more than once, i.e.&nbsp;it is repeated) and transfer them into the Paired Variables: box. Then simply click on OK. There you have it. Your t-test will appear in the output window.</p>
+</div>
+</div>
+<p><strong>Task 4:</strong> Paired t-test</p>
+<p>::: question</p>
+<details>
+<summary>
+<p>Q12: Is there a difference in wellbeing between pre and post test?</p>
+<p>Yes, the mean of the pre-test is 7.0549 and the post test 7.7134</p>
+</summary></details>
+<details>
+<summary>
+<p>Q13 Is this difference statistically significant? What is the p-value?</p>
+<p>The p-value is &lt;0.01</p>
+<div style="text-align:center">
+<p><img src="images/Paired_t_out.png" width="300" height="300"></p>
+</div>
+</summary></details>
+<details>
+<summary>
+<p>Q14 (Advanced) What is the Null Hypothesis for this test?</p>
+<p>That the means of the pre- and post-test groups are equal</p>
+</summary></details>
+<details>
+<summary>
+<p>Q15 (Advanced) Can the Null Hypothesis be rejected? Fill in: t ( df ) = t (the test statistic) , p-value</p>
+<p>Yes the p-value is &lt;0.01 so the null hypothesis can be rejected. Fill in: t(327) = -7.973, &lt;0.01</p>
+</summary></details>
+<p>:::</p>
+<p><strong>Task 2: Independent-samples t-test</strong></p>
+<p>We are now going to test whether there is a difference in stress levels between males and females at time 1 (an independent t-test) and then at time 2. To run the t-test, first select the Compare Means &amp; Proportions option in the Analyze pull down menu. Then select the relevant t-test. Once the Independent-samples t-test window is presented, select the dependent variables (into the Test Variable(s): box). Then select the variable that defines the different groups we wish to compare (GENDER) into the Grouping Variable: box. You then have to tell SPSS what groups within the grouping variable you wish to compare. Here, in GENDER, there are only two different groups (male and female). As such, click on the Define Groups button and enter 1 (male) in the Group 1: box and 2 (female) in the Group 2 (if not automatically entered): box.</p>
+<div style="text-align:center">
+<p><img src="images/unpaired_t.png" width="300" height="300"></p>
+</div>
 </section>
 </section>
 
