@@ -667,7 +667,7 @@ This association was/was not (delete as appropriate) statistically significant (
 <p>Q10) (Advanced) What is the null hypothesis for the test that you have conducted?</p>
 <p>Q11) (Advanced) Using the data in your output window, report the results of the chi square below. Report the results like this: 𝝌2 (degrees of freedom) = Pearson Chi Square value , p value</p>
 <p>𝝌2 (______) = __________ , ___________</p>
-Save your output as section3.spv.
+<p>Save your output as section3.spv.</p>
 </summary>
 <details style="background-color: #c5fce9;">
 <p><u><strong>78.3</strong></u> percent of boys who were satisfied with their life and <u><strong>21.7</strong></u> percent were dissatisfied.<br>
@@ -748,9 +748,133 @@ Q15 (Advanced) Can the Null Hypothesis be rejected? Fill in: t ( df ) = t (the t
 </details>
 </div>
 <p><strong>Task 2: Independent-samples t-test</strong></p>
-<p>We are now going to test whether there is a difference in stress levels between males and females at time 1 (an independent t-test) and then at time 2. To run the t-test, first select the Compare Means &amp; Proportions option in the Analyze pull down menu. Then select the relevant t-test. Once the Independent-samples t-test window is presented, select the dependent variables (into the Test Variable(s): box). Then select the variable that defines the different groups we wish to compare (GENDER) into the Grouping Variable: box. You then have to tell SPSS what groups within the grouping variable you wish to compare. Here, in GENDER, there are only two different groups (male and female). As such, click on the Define Groups button and enter 1 (male) in the Group 1: box and 2 (female) in the Group 2 (if not automatically entered): box.</p>
+<p>We are now going to test whether there is a difference in stress levels between males and females at time 1 (an independent t-test) and then at time 2. To run the t-test, first select the Compare Means &amp; Proportions option in the Analyze pull down menu. Then select the relevant t-test. Once the Independent-samples t-test window is presented, select the dependent variables (into the Test Variable(s): box). Then select the variable that defines the different groups we wish to compare (Gender) into the Grouping Variable: box. You then have to tell SPSS what groups within the grouping variable you wish to compare. Here, in Gender, there are only two different groups (male and female). As such, click on the Define Groups button and enter 1 (male) in the Group 1: box and 2 (female) in the Group 2 (if not automatically entered): box.</p>
 <div style="text-align:center">
 <p><img src="images/unpaired_t.png" width="300" height="300"></p>
+</div>
+<p>Figure 4.2</p>
+<p>Now click continue. Then click on OK and your tests will run.</p>
+</section>
+<section id="interpreting-the-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="interpreting-the-outputs">Interpreting the outputs</h2>
+<p>The output table shows the results from both t-tests: one comparing the stress levels of males and females at Time 1 (on top) and one comparing the stress levels of males and females at Time 2. Use the p values (in the column labelled ‘Sig. (2-tailed)’ and the row ‘Equal variances not assumed’) that are on the bottom in each box to answer the questions below. This is a more cautious test.</p>
+<div style="text-align:center">
+<p><img src="images/Indep_t_out.png" width="300" height="300"></p>
+</div>
+<p><strong>Task 5:</strong> Interpreting</p>
+<div class="question">
+<details>
+<summary>
+Q16: Summarise your findings. (How do males and females differ in their wellbeing levels on the pre-test? What about on the post-test?
+</summary>
+<p>On the pre-test Males (“1”) score higher (mean = 7.4565) than females (“2”) (mean = 6.7632). On the post-test Males (“1”) also score higher (mean = 7.8986) than females (“2”) (mean = 7.5789).</p>
+</details>
+<details>
+<summary>
+Q17 What is the p-value for the t-test at the pre-test? What is the p-value for the t-test at the post-test? Are the differences ‘statistically significant’?)
+</summary>
+<p>On the pre-test the p-value is &lt;0.01 - the result is significant.</p>
+<p>On the post-test the p-value for a two-tailed test with equal variance not assumed is 0.45 - the result is not significant.</p>
+</details>
+<details>
+<summary>
+Q18 What are the Null Hypotheses for these tests?
+</summary>
+<p>The means of the wellbeing scores for males and females are the same</p>
+</details>
+<details>
+<summary>
+Q19 Can the null hypotheses be rejected on a) the pre-test; b) the post-test?
+</summary>
+<p>On the pre-test the p-value is &lt;0.01 - the result is significant.</p>
+<p>On the post-test the p-value for a two-tailed test with equal variance not assumed is 0.45 - the result is not significant.</p>
+</details>
+<details>
+<summary>
+Q20 Describe your findings?
+</summary>
+<p>Male students had higher wellbeing that female students on the pretest (mean = 7.4565 vs 6.7632) - this difference was statistically significant (t(326) = 4.194, p&lt;.001). However, this difference was not significant (t(326) = 2.016, p&lt;.045) on the post-test (mean = 7.8986 vs 7.5789).</p>
+</details>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One of the assumptions of an independent t-test is that we have homogeneous (similar) variances in both groups. If we violate this assumption, the results of our t-test may be invalid. Therefore, we must test whether this assumption has been violated before interpreting our t-test. This is done with the Levene’s Test.</p>
+<p>A significant result (i.e.&nbsp;p&lt;0.05) for our Levene’s test means we have violated the assumption. In which case, we must use an ‘adjusted’ t-test. This is given on the row labelled “equal variances not assumed” in the SPSS output.</p>
+<p>However, if we have not violated the homogeneity of variances assumption (i.e.&nbsp;Levene’s is p&gt;0.05) we report the t-test results on the row labelled “equal variances assumed”.</p>
+</div>
+</div>
+</section>
+<section id="section-5-introduction-to-correlation" class="level2">
+<h2 class="anchored" data-anchor-id="section-5-introduction-to-correlation">Section 5: Introduction to Correlation</h2>
+<p>University performance can be judged from a number of perspectives. For universities around the world, league table position is a further influential indicator of organisational performance. A number of league tables exist but the Times Higher Education league table is highly respected. Universities want to know how they can improve their performance and the aim of this task is to search for potential predictors of league table performance.</p>
+<p>The data set <a href="https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EfPFig94IHlGovYy7sVJYxUBxzA2jWSUKeuRF52zX7erug?e=VWqXUo">THE.sav</a> contains the following variables for 1397 universities in 2020:</p>
+<table class="table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 81%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Institution</td>
+<td>University Name</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>Location</td>
+</tr>
+<tr class="odd">
+<td>Citations_2020</td>
+<td>A score out of 100 measuring how highly cited the academics at an institution are</td>
+</tr>
+<tr class="even">
+<td>Industry_Income_2020</td>
+<td>A score out of 100 measuring the income from industrial collaborations (spin out companies, consulting etc.)</td>
+</tr>
+<tr class="odd">
+<td>International_Outlook_2020</td>
+<td>A score out of 100 measuring how international an institution is (based on numbers of international students, faculty etc)</td>
+</tr>
+<tr class="even">
+<td>Research_2020</td>
+<td>A score out of 100 measuring the institution’s research quality</td>
+</tr>
+<tr class="odd">
+<td>Teaching_2020</td>
+<td>A score out of 100 measuring the institution’s teaching quality</td>
+</tr>
+<tr class="even">
+<td>Overall_2020</td>
+<td>An overall score for each institution</td>
+</tr>
+</tbody>
+</table>
+<p>To carry out a bivariate correlation, click on the <strong>Analyze</strong> pull down menu and then click on the <strong>Correlate</strong> option. Then select <strong>Bivariate</strong>. The window presented in Figure 5.1 will appear. On the left hand side of the window you will see the list of the variables in the data file. Select the variables and click on the OK button.</p>
+<div style="text-align:center">
+<p><img src="images/bivariate_cor.png" width="850" height="500"></p>
+</div>
+<p>Figure 5.1</p>
+<p><strong>Task 6:</strong> Correlation</p>
+<div class="question">
+<details>
+<summary>
+Q20: What is the strength and direction of the correlation between Research_2020 and Citations_2020?
+</summary>
+<p>ρ = .609 <strong>(strong positive correlation)</strong> p &lt;.001</p>
+</details>
 </div>
 </section>
 </section>
