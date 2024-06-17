@@ -681,9 +681,8 @@ This association was/was not (delete as appropriate) statistically significant (
 <p>𝝌2 (______) = __________ , ___________</p>
 <p>Save your output as section3.spv.</p>
 <summary>
-Q7 answer
 </summary>
-<details style="background-color: #c5fce9;">
+<details>
 <p><u><strong>78.3</strong></u> percent of boys who were satisfied with their life and <u><strong>21.7</strong></u> percent were dissatisfied.<br>
 <u><strong>46.3</strong></u> percent of girls who were satisfied with their life and <u><strong>60.1</strong></u> percent were dissatisfied. Compared to boys, girls were more likely to be <u><strong>dissatisfied</strong></u> with their lives.<br>
 <u><strong>This association was statistically significant (p&lt;0.05).</strong></u></p>
@@ -699,12 +698,49 @@ Q7 answer
 </section>
 <section id="section-4-performing-a-t-test" class="level2">
 <h2 class="anchored" data-anchor-id="section-4-performing-a-t-test">Section 4: Performing a T-test</h2>
-<p>Paired and independent samples t-tests</p>
-<p>Introduction</p>
+<section id="paired-and-independent-samples-t-tests" class="level3">
+<h3 class="anchored" data-anchor-id="paired-and-independent-samples-t-tests">Paired and independent samples t-tests</h3>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
 <p>There are two types of t-test that look at the difference between 2 groups or conditions. These are Paired t-tests (within/related subjects) and Independent samples t-test (between/unrelated subjects). We are going to look at both types using the stress.sav data file. Using this data file we can perform both types of t-test.</p>
 <p>You will find five different variables in the <a href="https://emckclac-my.sharepoint.com/:u:/g/personal/k1765032_kcl_ac_uk/EV-KLofbfUdArAN3UAjD45kBkggmU0gGzC8Fjog0JUMKyg?e=3yOZYS">Wellbeing.sav</a> data file. The data comes from a study into the wellbeing of university students in Colombia which measured their life satisfaction with a survey before and after a course on wellbeing. The data also include a group of control students who didn’t take the course.</p>
 <p>The variables in the data set are:</p>
-<p>ID - A participant unique identifier Gender -The Gender of the student (1 = Male / 2 = Female) Group - Whether the student was in the control or condition group (Intervention/ Control) Life_sat_pre - Respondents reports of their life satisfatcion (/10) before the intervnetion Life_sat_post - Respondents reports of their life satisfatcion (/10) after the intervnetion</p>
+<table class="table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ID</td>
+<td>A participant unique identifier</td>
+</tr>
+<tr class="even">
+<td>Gender</td>
+<td>The Gender of the student (1 = Male / 2 = Female)</td>
+</tr>
+<tr class="odd">
+<td>Group</td>
+<td>Whether the student was in the control or condition group (Intervention/ Control)</td>
+</tr>
+<tr class="even">
+<td>Life_sat_pre</td>
+<td>Respondents reports of their life satisfaction (/10) before the intervention</td>
+</tr>
+<tr class="odd">
+<td>Life_sat_post</td>
+<td>Respondents reports of their life satisfaction (/10) after the intervention</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="task-5-paired-t-test" class="level2">
 <h2 class="anchored" data-anchor-id="task-5-paired-t-test"><strong>Task 5: Paired t-test</strong></h2>
@@ -748,7 +784,7 @@ Q13 Is this difference statistically significant? What is the p-value?
 </summary>
 <p>The p-value is &lt;0.01</p>
 <div style="text-align:center">
-<p><img src="images/Paired_t_out.png" width="300" height="300"></p>
+<p><img src="images/Paired_t_out.png" width="500" height="600"></p>
 </div>
 </details>
 <details>
@@ -767,7 +803,7 @@ Q15 (Advanced) Can the Null Hypothesis be rejected? Fill in: t ( df ) = t (the t
 <p><strong>Task 2: Independent-samples t-test</strong></p>
 <p>We are now going to test whether there is a difference in stress levels between males and females at time 1 (an independent t-test) and then at time 2. To run the t-test, first select the Compare Means &amp; Proportions option in the Analyze pull down menu. Then select the relevant t-test. Once the Independent-samples t-test window is presented, select the dependent variables (into the Test Variable(s): box). Then select the variable that defines the different groups we wish to compare (Gender) into the Grouping Variable: box. You then have to tell SPSS what groups within the grouping variable you wish to compare. Here, in Gender, there are only two different groups (male and female). As such, click on the Define Groups button and enter 1 (male) in the Group 1: box and 2 (female) in the Group 2 (if not automatically entered): box.</p>
 <div style="text-align:center">
-<p><img src="images/unpaired_t.png" width="300" height="300"></p>
+<p><img src="images/unpaired_t.png" width="500" height="650"></p>
 </div>
 <p>Figure 4.2</p>
 <p>Now click continue. Then click on OK and your tests will run.</p>
@@ -776,7 +812,7 @@ Q15 (Advanced) Can the Null Hypothesis be rejected? Fill in: t ( df ) = t (the t
 <h2 class="anchored" data-anchor-id="interpreting-the-outputs">Interpreting the outputs</h2>
 <p>The output table shows the results from both t-tests: one comparing the stress levels of males and females at Time 1 (on top) and one comparing the stress levels of males and females at Time 2. Use the p values (in the column labelled ‘Sig. (2-tailed)’ and the row ‘Equal variances not assumed’) that are on the bottom in each box to answer the questions below. This is a more cautious test.</p>
 <div style="text-align:center">
-<p><img src="images/Indep_t_out.png" width="500" height="500"></p>
+<p><img src="images/Indep_t_out.png" width="600" height="750"></p>
 </div>
 <p><strong>Task 5:</strong> Interpreting the output</p>
 <div class="question-header">
